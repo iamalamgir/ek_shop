@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKSHOP</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="main.js" type="javascript"></script>
+    
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                effect: 'random',
+                slices: 10,
+                animSpeed: 500,
+                pauseTime: 2200,
+                startSlide: 0, //Set starting Slide (0 index)
+                directionNav: false,
+                directionNavHide: false, //Only show on hover
+                controlNav: false, //1,2,3...
+                controlNavThumbs: false, //Use thumbnails for Control Nav
+                pauseOnHover: true, //Stop animation while hovering
+                manualAdvance: false, //Force manual transitions
+                captionOpacity: 0.8, //Universal caption opacity
+                beforeChange: function () { },
+                afterChange: function () { },
+                slideshowEnd: function () { } //Triggers after all slides have been shown
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="main template clear">
+        <div class="header">
+            <div class="headeer-top-part">
+                <span class="service-link">
+                    <a href="/ekshop-registration" class="left">SAVE MORE ON APP</a>
+                </span>
+                <span class="service-link ">
+                    <a href="/ekshop-registration">BECOME A MERCHANT</a>
+                </span>
+                <span class="service-link">
+                    <a href="/campaigns">CAMPAIGN</a>
+                </span>
+                <span class="service-link">
+                    <a href="/order-tracking-global">TRACK MY ORDER</a>
+                </span>
+                <span class="service-link">
+                    <a href="/press-release">PRESS RELEASE</a>
+                </span>
+                <span class="service-link">
+                    <a href="/https://academy.ekshop.gov.bd/" target="_blank" class="service-link-no-case">EKSHOP
+                        LEARNING</a>
+                </span>
+                <span class="service-link">
+                    <a style="text-decoration: underline;">বাংলা</a>
+                </span>
+                <span  class="service-link">
+                    <a  class="customer-care ">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.05 5 A 5 5 0 0 1 19 8.95 M 15.05 1 A 9 9 0 0 1 23 8.94 m -1 7.98 v 3 a 2 2 0 0 1 -2.18 2 a 19.79 19.79 0 0 1 -8.63 -3.07 a 19.5 19.5 0 0 1 -6 -6 a 19.79 19.79 0 0 1 -3.07 -8.67 A 2 2 0 0 1 4.11 2 h 3 a 2 2 0 0 1 2 1.72 a 12.84 12.84 0 0 0 0.7 2.81 a 2 2 0 0 1 -0.45 2.11 L 8.09 9.91 a 16 16 0 0 0 6 6 l 1.27 -1.27 a 2 2 0 0 1 2.11 -0.45 a 12.84 12.84 0 0 0 2.81 0.7 A 2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <a class="num-slider">+880 9638-007007 <div id="number" class="animation"></div></a>
+                    </a>
+                </span>
+            </div>
+
+            <div class="headeer-inner-part">
+                <div class="brand-logo">
+                    <a href="/_">
+                        <img src="images/logo.png" alt="Logo" width="100" height="50">
+                    </a>
+                </div>
+                <div class="form-part">
+                    <form id="searchForm" class="search-form">
+                        <select class="search-select" name="search_option">
+                            <option value="product">Product</option>
+                            <option value="store">Store</option>
+                        </select>
+                        <input type="search" placeholder="Search...." value="">
+                        <button type="submit" class="ic-search">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <a class="track-logo" href="/_">
+                        <img src="images/track.png" alt="Logo" class="tooltip" width="50" height="50">
+                    </a>
+                </div>
+                <div class="live">
+                    <a href="/live-store">
+                        <div class="rotate">
+                            <span class="live-store">
+                                .
+                                Live
+                            </span>
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style="margin-right: 3px; margin-left: 3px; font-size: 15px;">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="account-action-dropdown">
+                    <div class="dropdown">
+                        <button class="dropbtn">Hello, Sign in/Sign Up <strong>My Account</strong>
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <button class="btn-sign-in">SIGN IN/SIGNUP</button>
+                            <a href="#"><span class="sell">Sell on EkShop (Be a merchant)</span></a>
+                            <a href="#">My Account</a>
+                            <a href="#">My Wishlist</a>
+                            <a href="#">Ekshop Wallet</a>
+                            <a href="#">My Orders</a>
+                            <a href="#">Disputes</a>
+                            <a href="#">My Coupon</a>
+                            <a href="#">Shipping Address</a>
+                            <a href="#">Messages</a>
+                            <a href="#">Bulk Request</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-cart mini-cart-mobaile-res">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M576 216v16c0 13.255-10.745 24-24 24h-8l-26.113 182.788C514.509 462.435 494.257 480 470.37 480H105.63c-23.887 0-44.139-17.565-47.518-41.212L32 256h-8c-13.255 0-24-10.745-24-24v-16c0-13.255 10.745-24 24-24h67.341l106.78-146.821c10.395-14.292 30.407-17.453 44.701-7.058 14.293 10.395 17.453 30.408 7.058 44.701L170.477 192h235.046L326.12 82.821c-10.395-14.292-7.234-34.306 7.059-44.701 14.291-10.395 34.306-7.235 44.701 7.058L484.659 192H552c13.255 0 24 10.745 24 24zM312 392V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm112 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm-224 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="header-bottom-part">
+                <ul>
+                    <li><a href="#">Uddakta Mall</a></li>
+                    <li><a href="#">Ecommerce Partner</a></li>
+                    <li><a href="#">Ekshop Campaign</a></li>
+                    <li><a href="#">Promotions</a></li>
+                    <li><a href="#">Ekshop Global</a></li>
+                    <li><a href="#" class="dropbtn">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="swiper-container">
+            <div class="shop-by-category">
+                <a href="#">SHOP BY CATEGORY</a>
+                <a href="#">Women's Fashion <span class="entity">&gt;</span></a>
+                <a href="#">Men's Fashion <span class="entity">&gt;</span></a>
+                <a href="#">Electronic Device <span class="entity">&gt;</span></a>
+                <a href="#">Electronic Accessories <span class="entity">&gt;</span></a>
+                <a href="#">TV & Home Appliances <span class="entity">&gt;</span></a>
+                <a href="#">Health & Beauty <span class="entity">&gt;</span></a>
+                <a href="#">Babies & Toys <span class="entity">&gt;</span></a>
+                <a href="#">Groceries &Pets <span class="entity">&gt;</span></a>
+                <a href="#">Home & Lifestyle <span class="entity">&gt;</span></a>
+                <a href="#">Watches & Accessories <span class="entity">&gt;</span></a>
+                <a href="#">Sports & Outdoor <span class="entity">&gt;</span></a>
+                <a href="#">Automotive & Motorbike <span class="entity">&gt;</span></a>
+            </div>
+            <div class="slidersection">
+                <div id="slider">
+                    <a href="#"><img src="images/slideshow/ekshopwebbannerpng-ok3.webp" alt="ekshop-1"
+                            title="Exclusive on Electronics and Gadgets" /></a>
+                    <a href="#"><img src="images/slideshow/ekshopwebbannerpng.webp" alt="ekshop-2"
+                            title="Clean, Safe & Protected" /></a>
+                    <a href="#"><img src="images/slideshow/ekshopwebbannerpng1.webp" alt="ekshop-3"
+                            title="New Arrival Saree Collection" /></a>
+                    <a href="#"><img src="images/slideshow/ekshopwebbannerXpng-ok2.webp" alt="ekshop-4"
+                            title="Grocery Collection" /></a>
+                    <a href="#"><img src="images/slideshow/webbannerpng.webp" alt="ekshop-5"
+                            title="New Year Sale" /></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="news">
+            <li>Latest News : <i class="fa fa-newspaper-o"></i></li>
+            <div class="news-feed">
+                <marquee>
+                    <a href="" class="text-slider1">মহেশপুরের গৃহস্থ বাড়ির খাসির মাংস এখন একশপে!.</a>
+                    <a href="" class="text-slider1">নতুন রূপে, নতুন আঙ্গিকে একশপ!</a>
+                    <a href="" class="text-slider2">মহেশপুরের গৃহস্থ বাড়ির খাসির মাংস এখন একশপে!.</a>
+                    <a href="" class="text-slider3">নতুন রূপে, নতুন আঙ্গিকে একশপ!</a>
+                </marquee>
+            </div>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="ps-block ps-block-1">
+                <img src="images/ekshop-mall.png" alt="ekshop mall">
+                <h1>ekShope Mall <span class="entity-block">&gt;&gt;</span></h1>
+            </div>
+            <div class="ps-block ps-block-2">
+                <img src="images/ekshop-branding.png" alt="ekshop branding">
+                <h1>District Branding <span class="entity-block">&gt;&gt;</span></h1>
+            </div>
+            <div class="ps-block ps-block-3">
+                <img src="images/ekshop-promotion1.png" alt="ekshop branding1">
+                <h1>Campaigns <span class="entity-block">&gt;&gt;</span></h1>
+            </div>
+            <div class="ps-block ps-block-4">
+                <img src="images/ekshop-campaign.png" alt="ekshop campaign">
+                <h1>Services <span class="entity-block">&gt;&gt;</span></h1>
+            </div>
+        </div>
+
+
+        <div class="card-list">
+            <div class="todays-deals">
+                <div class="today-text">
+                    <h2>Today's Deals</h2>
+                    <button class="view-all-btn-1">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/cock.webp" alt="">
+                        <div class="today-name">
+                            <p>White Badminton Cock</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/meat.webp" alt="">
+                        <div class="today-name">
+                            <p>Meat</p>
+                            <h1>৳ 525</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/fanush.webp" alt="">
+                        <div class="today-name">
+                            <p>Fanush</p>
+                            <h1>৳ 300</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/dates.webp" alt="">
+                        <div class="today-name">
+                            <p>Dates</p>
+                            <h1>৳ 400</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/body-slimmer.webp" alt="">
+                        <div class="today-name">
+                            <p>Body Slimmer</p>
+                            <h1>৳ 450</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="summer-collections">
+                <div class="today-text">
+                    <h2>Summer collections</h2>
+                    <button class="view-all-btn-2">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/water-bottle.webp" alt="">
+                        <div class="today-name">
+                            <p>Water Bottle Wodden Colour</p>
+                            <h1>৳ 600</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/folding-manual-umbrella.webp" alt="">
+                        <div class="today-name">
+                            <p>Folding manual umbrella</p>
+                            <h1>৳ 320</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/water-bottle-blue.webp" alt="">
+                        <div class="today-name">
+                            <p>Water bottle blue</p>
+                            <h1>৳ 100</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/stainless-steel-manual-hand-press.webp" alt="">
+                        <div class="today-name">
+                            <p>Stainless steel manual hand press</p>
+                            <h1>৳ 345</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/exclusive-notebook-water-bottle.webp" alt="">
+                        <div class="today-name">
+                            <p>Exclusive notebook water bottle</p>
+                            <h1>৳ 230</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="electronics">
+                <div class="today-text">
+                    <h2>Electronics</h2>
+                    <button class="view-all-btn-3">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/galaxy-f13.webp" alt="">
+                        <div class="today-name">
+                            <p>Galaxy F13</p>
+                            <h1>৳ 22110</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/havit-speaker.webp" alt="">
+                        <div class="today-name">
+                            <p>Havit speaker</p>
+                            <h1>৳ 450</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/original-mi-power-adapter.webp" alt="">
+                        <div class="today-name">
+                            <p>Original mi power adapter</p>
+                            <h1>৳ 400</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/lenovo-he05-wireless.webp" alt="">
+                        <div class="today-name">
+                            <p>Lenovo he05 wireless</p>
+                            <h1>৳ 460</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/large-air-diffuser-usb.webp" alt="">
+                        <div class="today-name">
+                            <p>Large air diffuser usb</p>
+                            <h1>৳ 410</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="womens-collection">
+                <div class="today-text">
+                    <h2>Women's-Collection</h2>
+                    <button class="view-all-btn-4">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/cotton-embroidery.webp" alt="">
+                        <div class="today-name">
+                            <p>Cotton Embroidery Work Salwar Kameez</p>
+                            <h1>৳ 1099</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/watch.webp" alt="">
+                        <div class="today-name">
+                            <p>Watch for women rhinestone ladies quartz watches</p>
+                            <h1>৳ 220</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/shada-bahar.webp" alt="">
+                        <div class="today-name">
+                            <p>Shada Bahar</p>
+                            <h1>৳ 1700</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/mask.webp" alt="">
+                        <div class="today-name">
+                            <p>Cotton 2 layer mask</p>
+                            <h1>৳ 120</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/unstitched-4pcs.webp" alt="">
+                        <div class="today-name">
+                            <p>Unstitched 4pcs High Quality Embroidery Salwar Kameez</p>
+                            <h1>৳ 1250</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="ladies-bag-bollections">
+                <div class="today-text">
+                    <h2>Ladies Bag Collections</h2>
+                    <button class="view-all-btn-5">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/bag-with-long-handle.webp" alt="">
+                        <div class="today-name">
+                            <p>Bag with Long Handle</p>
+                            <h1>৳ 650</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/orange-hand-bag.webp" alt="">
+                        <div class="today-name">
+                            <p>Orange Hand Bag</p>
+                            <h1>৳ 590</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/small-pu-leather.webp" alt="">
+                        <div class="today-name">
+                            <p>Small PU Leather Hand Bag</p>
+                            <h1>৳ 350</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/square-star-sequin-crossbody-bag.webp" alt="">
+                        <div class="today-name">
+                            <p>Square Star Sequin Crossbody Bag</p>
+                            <h1>৳ 540</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/stripe-backpack-girls-bag.webp" alt="">
+                        <div class="today-name">
+                            <p>Stripe Backpack Girls Bag</p>
+                            <h1>৳ 350</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="global-products">
+                <div class="today-text">
+                    <h2>Global Products</h2>
+                    <button class="view-all-btn-6">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/medical-anti.webp" alt="">
+                        <div class="today-name">
+                            <p>Medical Anti Fog Safety</p>
+                            <h1>৳ 150</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/ladies-perfume.webp" alt="">
+                        <div class="today-name">
+                            <p>Ladies Perfume</p>
+                            <h1>৳ 650</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/car-key-lighter.webp" alt="">
+                        <div class="today-name">
+                            <p>Car key lighter windproof</p>
+                            <h1>৳ 400</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/kids-school-bag.webp" alt="">
+                        <div class="today-name">
+                            <p>kids school bag</p>
+                            <h1>৳ 1000</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/womens-shoes.webp" alt="">
+                        <div class="today-name">
+                            <p>Womens shoes</p>
+                            <h1>৳ 550</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="sharees-collection">
+                <div class="today-text">
+                    <h2>Sharee's Collection</h2>
+                    <button class="view-all-btn-7">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/multicolour.webp" alt="">
+                        <div class="today-name">
+                            <p>Multicolour Cotton Print 12 hand Saree For woman</p>
+                            <h1>৳ 600</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/yellow-golden-color.webp" alt="">
+                        <div class="today-name">
+                            <p>Yellow & golden color saree</p>
+                            <h1>৳ 300</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/half-silk-sarees.webp" alt="">
+                        <div class="today-name">
+                            <p>Half Silk Sarees</p>
+                            <h1>৳ 800</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/multi-color-cotton-sarees.webp" alt="">
+                        <div class="today-name">
+                            <p>Multi Color Cotton Sarees</p>
+                            <h1>৳ 850</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/womens-sarees.webp" alt="">
+                        <div class="today-name">
+                            <p>Womens Sarees</p>
+                            <h1>৳ 580</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="smartphones">
+                <div class="today-text">
+                    <h2>SMARTPHONES</h2>
+                    <button class="view-all-btn-8">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/walto-primo-h9.webp" alt="">
+                        <div class="today-name">
+                            <p>Walton Primo H9</p>
+                            <h1>৳ 6999</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/galaxy-tab-a.webp" alt="">
+                        <div class="today-name">
+                            <p>Galaxy Tab A</p>
+                            <h1>৳ 10091</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/for-vivo-v19.webp" alt="">
+                        <div class="today-name">
+                            <p>For Vivo V19</p>
+                            <h1>৳ 160</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/walton-primo-n4.webp" alt="">
+                        <div class="today-name">
+                            <p>Walton Primo N4</p>
+                            <h1>৳ 8999</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/primo-hm5.webp" alt="">
+                        <div class="today-name">
+                            <p>Primo HM5</p>
+                            <h1>৳ 7999</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="flagship-Store">
+                <div class="today-text">
+                    <h2>Flagship Store</h2>
+                    <button class="view-all-btn-9">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/beauty-care.webp" alt="">
+                        <div class="today-name">
+                            <p>Beauty Care</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/craftina.webp" alt="">
+                        <div class="today-name">
+                            <p>Craftina</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/buy.webp" alt="">
+                        <div class="today-name">
+                            <p>Buy</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/star-line.webp" alt="">
+                        <div class="today-name">
+                            <p>Star Line</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/trina-chocolates.webp" alt="">
+                        <div class="today-name">
+                            <p>Trina Chocolates</p>
+                            <h1>৳ 80</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="ekshop">
+                <div class="today-text">
+                    <h2>Ekshop</h2>
+                    <button class="view-all-btn-10">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/blue-magic.webp" alt="">
+                        <div class="today-name">
+                            <p>Blue Magic</p>
+                            <h1>৳ 900</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/full-sleeve-sweatshirt.webp" alt="">
+                        <div class="today-name">
+                            <p>Full Sleeve Sweatshirt</p>
+                            <h1>৳ 750</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/walton-refrigerator.webp" alt="">
+                        <div class="today-name">
+                            <p>Walton Refrigerator</p>
+                            <h1>৳ 24900</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/playing-sleeping.webp" alt="">
+                        <div class="today-name">
+                            <p>Playing Sleeping</p>
+                            <h1>৳ 2250</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/bluetooth-speaker.webp" alt="">
+                        <div class="today-name">
+                            <p>Bluetooth Speaker</p>
+                            <h1>৳ 2700</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+
+            <div class="just-for-you">
+                <div class="today-text">
+                    <h2>Just For You</h2>
+                    <button class="view-all-btn-11">View All</button>
+                </div>
+                <div class="today-img-items">
+                    <button class="todays-deals-btn1">&lt;</button>
+                    <div class="today-img">
+                        <img src="images/music-earbuds.webp" alt="">
+                        <div class="today-name">
+                            <p>Music Earbuds</p>
+                            <h1>৳ 1850</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/charging-cablemicro.webp" alt="">
+                        <div class="today-name">
+                            <p>Charging Cablemicro</p>
+                            <h1>৳ 140</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/a4-tech-mouse.webp" alt="">
+                        <div class="today-name">
+                            <p>A4 Ttech Mouse</p>
+                            <h1>৳ 350</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/t-shape-stylish-full-hata-tshirt.webp" alt="">
+                        <div class="today-name">
+                            <p>T shape stylish full hata tshirt</p>
+                            <h1>৳ 140</h1>
+                        </div>
+                    </div>
+                    <div class="today-img">
+                        <img src="images/portable-hand-fan.webp" alt="">
+                        <div class="today-name">
+                            <p>Portable hand fan</p>
+                            <h1>৳ 270</h1>
+                        </div>
+                    </div>
+                    <button class="todays-deals-btn2">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="ekshop-footer">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="EkShop">
+                    <p>Contact Number : +880 9638-007007<br>Email ID : support@ekshop.gov.bd<br>Address : Asha Center,
+                        House-44, Road 2/A,<br>Dhanmondi, Dhaka-1209</p>
+                </div>
+                <div class="footer-contact-info">
+                    <h2>Contact Info</h2>
+                    <a href="#">&gt; About Us</a>
+                    <a href="#">&gt; TRACK MY ORDER</a>
+                    <a href="#">&gt; Privacy and Confidentiality</a>
+                    <a href="#">&gt; Terms & Conditions</a>
+                    <a href="#">&gt; Return And Refund Policy</a>
+                    <a href="#">&gt; Contact Us</a>
+                </div>
+                <div class="footer-mobile-app">
+                    <div class="mobile-app-store">
+                        <h2>Download Mobile App</h2>
+                        <div class="mobile-app-store-img">
+                            <img src="images/app-store.svg" alt="AppStore">
+                            <img src="images/play-store.svg" alt="PlayStore">
+                        </div>
+                    </div>
+                    <div class="mobile-app-social-list">
+                        <h2>Follow Us</h2>
+                        <a href=""><button class="btn1"><i class="fa fa-facebook"></i></button></a>
+                        <a href=""><button class="btn2"><i class="fa fa-twitter"></i></button></a>
+                        <a href=""><button class="btn3"><i class="fa fa-linkedin"></i></button></a>
+                        <a href=""><button class="btn4"><i class="fa fa-instagram"></i></button></a>
+                        <a href=""><button class="btn5"><i class="fa fa-youtube-play"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-payment-secured">
+                <h2>Payment secured by ESCROW:</h2>
+                <img src="images/escrow.png" alt="Escrow">
+            </div>
+
+            <div class="footer-branding">
+                <h2>Payment Option</h2>
+                <div class="footer-branding-card-list">
+                    <div class="footer-branding-card">
+                        <div class="footer-branding-card-img">
+                            <img src="images/bkash.png" alt="bkash" class="img-down1">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/nogod.png" alt="Nogod" class="img-down2">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/rocket.png" alt="Rocket" class="img-down3">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/download.png" alt="visa" class="img-down4">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/Mastercard.png" alt="Mastercard" class="img-down5">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/american.png" alt="American" class="img-down6">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/brac.png" alt="Brac" class="img-down7">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/dbbl.png" alt="dbbl" class="img-down8">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/city.jpg" alt="City" class="img-down9">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/bank-ashia.png" alt="Bank ashia" class="img-down10">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/mcash.jpg" alt="mcash" class="img-down11">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/MTB.jpg" alt="mtb" class="img-down12">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/sure.png" alt="Sure" class="img-down13">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/Dmoney.jpg" alt="Dmoney" class="img-down14">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/ebl.png" alt="ebl" class="img-down15">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/fast-cash.png" alt="Fast cash" class="img-down16">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/download1.jpeg" alt="U" class="img-down17">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/u-pay.png" alt="U pay" class="img-down18">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/download2.png" alt="ipay" class="img-down19">
+                        </div>
+                        <div class="footer-branding-card-img">
+                            <img src="images/download3.png" alt="GG" class="img-down20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-planning">
+                <h2>Planning and Implementation</h2>
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-content-details">
+                    <h2>Enjoy your finest shopping experience with ekShop!</h2>
+                    <p>
+                        Make your shopping experience smooth like never before
+                        with ekShop, the world's first integrated assisted
+                        rural e-Commerce platform. ekShop incorporates all the
+                        top e-Commerce, payments, and logistic players into
+                        one platform and acts as a national e-Commerce infrastructure
+                        backbone. With a continuous effort to escalate in a
+                        global e-commerce market, a search in its platform
+                        can compare similar products drawn from multiple
+                        e-Commerce platforms in a single window, increasing
+                        the chances of a consumer finding a preferred outcome,
+                        in contrast to the potential limitations of choosing in
+                        a particular site. The same system enables producers and
+                        retailers to sell their products to the market participants
+                        as a single-entry point. They can go to the government-owned
+                        union digital centre or virtually enter as a vendor into the
+                        platform and upload their product to ekShop. It automatically
+                        is available to ekShop's partners' eCommerce websites.
+                    </p>
+                    <p>
+                        Launched by Aspire to Innovate (a2i) Programme of the
+                        Bangladesh government and United Nations Development
+                        Programme (UNDP) in 2018, its ecosystem facilitates
+                        a robust national and international chain of goods
+                        transactions, ensuring the utmost financial safety
+                        between entrepreneurs, producers and consumers.
+                    </p>
+                    <p>
+                        In a bid to enrich its capacity, ekShop has facilitated
+                        many cottages, micro, small and medium enterprises
+                        (CMSMEs) - led mainly by women entrepreneurs - with
+                        open commerce platforms such as Anondomela, Joyeeta,
+                        WE, eMARKET of SME Foundation and Bangladesh Small
+                        and Cottage Industries Corporation (BSCIC) and Digital Haat.
+                    </p>
+                </div>
+                <div class="footer-content-details1">
+                    <p>
+                        In addition, its initiative p-commerce like Phone-e-nittoponno (333-5) and
+                        'Food for Nation' platform eased thousands of registered farmers and local
+                        businesses to post their ads for Agri products at local market prices,
+                        leaving them not wary about middlemen and selling perishables items.
+
+                        ekShop has expanded its chain of services internationally to Xiaomi Mobile, Malaysia, Singapore,
+                        Nepal, Yemen, South Sudan, Turkey, Colombia, Gulf region, North America and Europe .
+                    </p>
+                    <h2>Trending</h2>
+                    <p>
+                        Valentine's Day Sale, ekShop Ekushey Offer,
+                        Mobile Week Sale, Deals Under 999, 100 te 100,
+                        ekShop Payment Partners, ekShop Mall, Uddakta Mall,
+                        Ecommerce Partner, Ekshop Campaign, Promotions,
+                        Ekshop Global, Mega Deals, ekShop Voucher,
+                        Gorur Haat, Anniversary Sale, Hot Deals, Falgun Offer,
+                        bKash Offers, Boishakhi offer, BD Cricket Live,
+                        District branding, ekshop Sofol Uddakta.
+                    </p>
+                    <h2>Top Categories & Brands</h2>
+                    <h3>MOBILE PHONES</h3>
+                    <p>
+                        Xiaomi Mobile, Samsung Mobile, Huawei Mobile,
+                        Symphony Mobile, Nokia Mobile, OnePlus Mobile,
+                        realme Mobile, Infinix Mobile, Oppo Mobile, Vivo Mobile
+                    </p>
+                    <h3>MOBILE ACCESSORIES</h3>
+                    <p>
+                        Earphone, Phone Cover, Mobile Charger,
+                        Mobile Battery, Power Bank, Memory Card,
+                        Smart Watch
+                    </p>
+                    <h3>LAPTOPS</h3>
+                    <p>
+                        HP Laptops, Dell Laptops, Asus Laptops,
+                        Lenovo Laptops, Graphics Card
+                    </p>
+                    <h3>LED TV</h3>
+                    <p>
+                        Sony Led TV, Samsung Led TV, LG Led TV, Singer Led TV
+                    </p>
+                    <h3>HOME APPLIANCES</h3>
+                </div>
+                <div class="footer-content-details2">
+                    <p>
+                        Air Conditioners, Refrigerators, Deep Freezers, Generators,
+                        UPS Battery, Washing Machines, Heaters, Solar Panel,
+                        Earphones, DSLR Cameras, Air Cooler, Microwave Oven,
+                        Water Filters
+                    </p>
+                    <h3>FANS</h3>
+                    <p>
+                        Click Fan, Mira Fan, Baseus Fan, BRB Fan, Defender Fan,
+                        National fan, Sony Fan, Sunca Fan, Orient Fan, Superstar Fan,
+                        Havells Fan, Conion Fan, Kashmir Fan
+                    </p>
+                    <h3>TRENDING WALTON PRODUCTS</h3>
+                    <p>
+                        Thermos flask, Tea flask, Hot water flask, Geyser, Leather Jackets,
+                        Men's Hoodies, Badminton Rackets
+                    </p>
+                    <h3>TRENDING WALTON PRODUCTS</h3>
+                    <p>
+                        Walton Mobile Walton Led TV Walton AC Walton Refrigerator Walton Laptop
+                        Walton Oven Walton Blender Walton Microwave Oven Walton Air Cooler Walton
+                        Smart TV, Walton Computers
+                    </p>
+                    <h3>BEST-SELLING PRODUCTS</h3>
+                </div>
+                <div class="footer-content-details3">
+                    <p>
+                        Date Palm jereen Jaggery, Nakshikatha, Homemade products, Jireen Liquid Jaggery,
+                        rina Chocolates, Nuts,Seeds & Dry Fruits, Xiaomi Redmi Note 9, Xiaomi Redmi Note 9 Pro,
+                        Oppo F17, realme C17, realme 7i, Realme 7 Pro, Realme 8 Pro, realme Narzo 30, Xiaomi Redmi 9,
+                        Samsung Galaxy M31, Vivo Y11, Oppo F17 Pro, Xiaomi Poco M2 Pro, Oppo A12, Vivo V20, Infinix Hot
+                        9,
+                        Xiaomi Redmi Note 8 Pro, Vivo Y30, iPhone 12 Pro Max, Redmi Note 10, Vivo Y20, Samsung M02s,
+                        Samsung M40, Samsung A72, Samsung A52, Oppo A53, Realme C21, Realme C25, Infinix Hot 10, Oppo
+                        A15s,
+                        Tecno Spark 6, Tecno Spark 7 Pro, Xiaomi Poco X3 Pro, Oppo F19 Pro, Samsung Galaxy A32, Motorola
+                        Moto G30,
+                        Samsung Galaxy M12, Infinix Smart 5, Vivo Y12a, Samsung Note 20 Ultra, realme C20a, OPPO Reno 5,
+                        realme C12,
+                        realme C15, Samsung Galaxy Z Fold3, Samsung Galaxy Z Flip3, realme C25s, realme 8 Pro, Samsung
+                        A50, OPPO A16,
+                        Vivo X60 Pro, Motorola Moto G60, realme 8 5g, Samsung Galaxy A51, Tecno Camon 16, OPPO A54,
+                        realme GT Master Edition,
+                        iPhone 13, iPhone 13 Pro Max, iPhone 13 Mini, iPhone 13 Pro, Vivo Y53s, Samsung F22, realme
+                        Narzo 50i, Mutton from meat and bones.
+                    </p>
+                    <h3>POPULAR STORES CATEGORY</h3>
+                    <p>
+                        Uddakta Store, SME, Bazar Bandhu, Online Stationery Shop, Online Book Shop,
+                        Online Makeup Store, Baby Toys Shop, Pet Supplies Store, Online Grocery Shop,
+                        Monihari, Meat & Bones
+                    </p>
+                    <h3>TRENDING LOCAL SEARCH</h3>
+                    <p>
+                        গ্রামীণ প্রোডাক্ট, নকশি কাঁথা, কানের দুলের ডিজাইন, বোরকা ডিজাইন, খাটের ডিজাইন, জুতা, মোবাইল
+                        ফোনের দাম,
+                        থ্রি পিস, চটি জুতা, জার্সি ডিজাইন, মোটর সাইকেল, াড়ি, ড্রেসিং টেবিল, বিজ্ঞান বই, হুডি, ব্লেজার,
+                        গিজার, জ্যাকেট,
+                        শাল, লেদার জ্যাকেট, জিন্সের জ্যাকেট, বাংলাদেশের খেলা লাইভ
+                    </p>
+                    <h3>TOP GROCERY PRODUCTS</h3>
+                    <p>
+                        Soyabean Oil, Sunflower Oil, Olive Oil, Mustard Oil, Coconut Oil, Canola Oil,
+                        Ghee, Castor Oil consequuntur asperiores non iusto exercitationem consequatur nisi!
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 <strong>EkShop.</strong> All Right Reserved</p>
+                <p><a href="#">www.ekshop.gov.bd</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
